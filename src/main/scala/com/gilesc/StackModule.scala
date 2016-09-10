@@ -9,11 +9,5 @@ trait StackModule {
     case x :: xs => (xs, x)
     case Nil => sys.error("stack is empty")
   }
-
-  def stackManip(state: Stack): (Stack, Int) = {
-    val (s1, _) = push(state, 3)
-    val (s2, a) = pop(s1)
-    pop(s2)
-  }
 }
 
