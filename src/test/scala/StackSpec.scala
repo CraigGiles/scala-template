@@ -1,6 +1,5 @@
 package com.gilesc
 
-import com.gilesc.model.constraints.{RawPassword, Username, Email}
 import com.gilesc.registration.Registration
 import org.scalatest.{Matchers, WordSpecLike}
 
