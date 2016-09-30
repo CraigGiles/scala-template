@@ -2,7 +2,7 @@
 val commonSettings = Seq(
   organization := "com.gilesc",
   version := "0.0.1",
-  scalaVersion := "2.11.8",
+  scalaVersion in ThisBuild := "2.11.8",
   scalacOptions := Seq(
     "-unchecked"
   ))
