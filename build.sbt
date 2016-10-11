@@ -30,13 +30,17 @@ lazy val rootProject = (project in file("."))
 lazy val flyway = (project in file("flyway"))
   .enablePlugins(FlywayPlugin)
   .settings(
-    libraryDependencies ++= Seq(mysqlConnectorJava)
+    libraryDependencies ++= Seq(
+      mysqlConnectorJava
+    )
   )
 
 lazy val backend = Project("backend", file("backend"))
   .settings(commonSettings: _*)
   .settings(
-    libraryDependencies ++= Seq(cats, scalatest("test"))
+    libraryDependencies ++= Seq(
+      cats, scalatest("test")
+    )
   )
 
 lazy val presentation = Project("presentation", file("presentation"))
