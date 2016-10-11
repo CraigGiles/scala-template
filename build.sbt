@@ -31,6 +31,7 @@ lazy val flyway = (project in file("flyway"))
   .enablePlugins(FlywayPlugin)
   .settings(
     libraryDependencies ++= Seq(
+      flywayCore,
       mysqlConnectorJava
     )
   )
