@@ -1,6 +1,5 @@
 package com.gilesc
 
-import com.gilesc.registration.Registration
 import org.scalatest.{Matchers, WordSpecLike}
 
 class StackSpec extends WordSpecLike with Matchers with StackModule {
